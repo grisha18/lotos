@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
+    <div class="header container">
         <div class="header__menu">
+            <img class="main__image__burger" src="./img/burger.png"   alt=""/>
             <span class="header__menu__text">
                 Меню
             </span>
-            <img class="main__image__burger" src="./img/burger.png"   alt=""/>
+            
         </div>
         <div class="header__try-exercise">
             <span class="header__try-exercise__text">
@@ -27,14 +28,14 @@
         </div>
     </div>
 
-    <div class="main">
+    <div class="main container">
         <div class="main__image">
             <img class='main__image__lotos' src='./img/logo.png'  alt='картинка лотоса'/>
             <img class='main__image__girl' src='./img/03_girl.png'  alt='картинка девушки'/>
         </div>
         <div class="main__form">
             <div class='main__form__header'>
-                <div class="main__form__header__number">10%</div> <span class="subscription__discount">cкидка<br><span class="subscription__text">на абонемент</span></span>
+                <span class="subscription__discount"><span class="main__form__header__number">10%</span> cкидка на абонемент</span>
             </div>
             <div class="main__form__text">
                 Мы сделаем для вас 10% скидку на абонемент,<br>
@@ -45,10 +46,10 @@
                 <input  class='main__form__input__phone' type='text' name='phone' placeholder="Ваш телефон"/>
             </div>
             <div class="main__form__button">
+                <div class="main__form__button__img">
+                    <img src="./img/envelope.png" alt=""/>
+                </div>
                 Отправить заявку
-            </div>
-            <div class="main__form__button__img">
-                <img src="./img/envelope.png" alt=""/>
             </div>    
             <div class="main__form__notice">
                 Нажимая «Отправить заявку», вы даете <span class="agree">согласие</span><br> на обработку своих персональных данных
@@ -61,7 +62,7 @@
         </div>
     </div> 
 
-    <div class="footer">
+    <div class="footer container">
         <div class="footer__social">
             <div class="footer__social__vk">vk</div>
             <div class="footer__social__fb">fb</div>

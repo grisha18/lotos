@@ -1,48 +1,68 @@
 body{
     background-color: #fbf5f4;
 }
-.header__menu__text{
-    margin-left: 100px;
-    position: absolute;
-    top: 15px;
+
+.container{
+    max-width: 1720px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0;
+    border: 1px solid red;
+    margin: 0 90px;
 }
-.main__image__burger{
-    margin-left: 62px;
-    margin-top: 10px;
+.main__form{
+    max-width: 380px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
-.main__image__point{
-    position: absolute;
-    margin-left: 685px;
-    margin-top: -17px;
-} 
-.header__try-exercise__text{
-    margin-left: 700px;
-    position: absolute;
-    top: 15px;
+.main__form__input{
+    display: flex;
+    flex-direction: column;
+    
 }
-.header__phone__text{
-    margin-left: 1200px;
-    position: absolute;
-    top: 15px;
-}   
+
+.main__form__input__name{
+    padding-top: 30px;
+}
+.main__form__input__phone{
+    padding-top: 30px;
+}
+
+.header{
+    
+}
+
+
+
+
+
 .header__phone__text a{
     text-decoration: none;
     color: #000000;
 }
+.main__image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 700px;
+    border: 1px solid red;
+}
 .main__image__girl{
-    margin-top: 150px;
-    margin-left: 80px;
+    
+    
 }
 .main__form__text{
-    position: absolute;
-    margin-left: 705px;
-    margin-top: -430px;
+
+    
+    
     font-size: 18px;
  }
  .main__form__input__name{
-     position: relative;
-     margin-left: 705px;
-     top: -340px;
+  
+  
+    padding-bottom: 15px;
      border: none;
      color: #646262;
      font-size: 16px;
@@ -50,27 +70,29 @@ body{
      background: none;
  }
  .main__form__input__phone{
-     position: relative;
-     margin-left: 705px;
-     top: -320px;
+    padding-bottom: 15px;
      border: none;
      color: #646262;
      font-size: 16px;
      border-bottom: 2px solid #c9c4c3;
      background: none;
  }
+
+ .main__form__input__phone::placeholder{
+     
+     
+ }
+
+
  .main__image__lotos{
-     position: absolute;
-     margin-top: 430px;
-     margin-left: 20px;
+  
  }
  .agree:hover{
      text-decoration: underline;
      color: #6d6b6a;
  }
 .main__form__button{
-    margin-left: 705px;
-    margin-top: -200px;
+
     background-color: #f78e6a;
     color: #ffffff;
     width: 180px;
@@ -79,32 +101,33 @@ body{
     padding-top: 23px;
     border-radius: 29px;
 }
+.main__form__header{
+    display: flex;
+    flex-direction: row;
+}
 .main__form__button__img{
-    margin-left: 705px;
-    margin-top: -62px;
+
 }
 .main__form__notice{
-    margin-left: 705px;
-    margin-top: 25px;
 }
 .main__form__header__number{
-    position: absolute;
-    margin-left: 700px;
-    margin-top: -600px;
+
     font-size: 80px;
     color: #fa7888;
 }
+.main__pager{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .main__pager__current{
-    position: absolute;
-    margin-left: 1230px;
-    margin-top: -430px;
+ 
     font-size: 72px;
     color: #f9807d;
 }
 .main__pager__total{
-    position: absolute;
-    margin-left: 1250px;
-    margin-top: -345px;
+ 
     font-size: 30px;
     color: #f9807d;
 }
@@ -114,53 +137,77 @@ body{
     text-transform: uppercase;
     color: #111010;
     font-size: 10px;
-    margin-top: 100px;
+ 
+}
+.main__form__text{
+    margin-top: 50px;
+}
+.main__form__input{
+    margin-top: 60px;
+}
+.main__form__button{
+    position: relative;
+    margin-top: 50px;
+}
+.main__form__button__img{
+    position: absolute;
+    left:0;
+    top: 0;
+}
+.main__form__notice{
+    margin-top: 25px;
+    font-size: 12px;
+}
+.footer__teachers{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+
+}
+.footer__social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 105px;
+    flex-grow: 1;
+    align-items: center;
 }
 .footer__social__vk{
-   margin-left: 30px;
+ 
 }
 .footer__social__fb{
-   margin-left: 35px;
+  
 }
 .footer__social__inst{
-    margin-left: 40px;
+   
 }
 .footer__teachers__text{
-   margin-left: 1150px;
-   margin-top: -15px;
+   margin-right: 10px;
 }
 .footer__teachers__icon{
-  margin-left: 1260px;
-  margin-top: -24px;
+  
 }
 .subscription__discount{
-    position: absolute;
-    margin-left: 860px;
-    margin-top: -575px;
+  
     font-size: 48px;
     color: #000000;
 } 
 .subscription__text{
-    margin-left: -155px;
+  
 }
 .header__price{
-    margin-top: 100px;
+    
 }
 .header__price__menu__text{
-    position: relative;
-    margin-left: 100px;
-    top: -40px;
+    
+    
 
 }
 .main__images__burger{
-    position: absolute;
-    margin-left: 60px;
-    top: 988px;
+   
 }
 .main__images__point{
-    position: absolute;
-    margin-left: 685px;
-    margin-top: -13px;
+   
 } 
 .header__price__subscription__text{
     margin-left: 695px;
