@@ -1,7 +1,10 @@
 body{
     background-color: #fbf5f4;
+    scroll-behavior: smooth;
 }
-
+.page{
+    height: 100vh;
+}
 .container{
     max-width: 1720px;
     display: flex;
@@ -155,9 +158,7 @@ body{
     border: 1px solid red;
 }
 
-.main__table__price{
-    margin-top: -650px ;
-}
+
 
 .footer__socials{
     max-width: 1720px;
@@ -216,24 +217,47 @@ body{
     text-decoration: none;
     color: #000000;
 }
-.main__table__price{
-    background-color:#ffffff;
-    width: 360px;
-    height: 290px;
-    margin-left: 720px;
-}
-.main__subscription__button{
-    background-color: #f78e6a;
-    color: #ffffff;
-    width: 180px;
-    height: 40px;
-    padding-left: 80px;
-    padding-top: 23px;
-    border-radius: 29px;
-    margin-left: 720px;
-    margin-top: 60px;
+
+table{
+    width: 560px;
+    height: 420px;
+    background-color: white;
 }
 
+td{
+    border: 4px solid  #fbf5f4;
+    text-align: center;
+    font-size: 18px;
+}
+.main__table{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.main__subscription__button{
+    position: relative;
+    background-color: #f78e6a;
+    color: #ffffff;
+    width: 300px;
+    height: 60px;
+    
+    text-align: center;
+    
+    border-radius: 29px;
+}
+
+.main__subscription__button div{
+    margin-top: 20px;
+}
+
+
+.main__subscription__button__check{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .main__pager__current__five{
     font-size: 72px;
     color: #f9807d;
