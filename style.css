@@ -120,6 +120,21 @@ body{
    flex-direction: row;
    align-items: center;
 }
+table{
+    width: 560px;
+    height: 420px;
+    background-color: white;
+}
+td{
+    border: 4px solid  #fbf5f4;
+    text-align: center;
+    font-size: 18px;
+}
+.main__table{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .footer__social{
     display: flex;
     flex-direction: row;
@@ -131,23 +146,8 @@ body{
     color: #111010;
     font-size: 10px;
 }
-
 .footer__teachers__text{
    margin-right: 10px;
-}
-.header__price__container{
-    max-width: 1720px;
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 0;
-    border: 1px solid red;
-    margin: 0 90px;
-}
-.main__pictures{
-   max-width: 1720px;
-   border: 1px solid red;
-   margin: 0 90px;
-   height: 710px;
 }
 .main__pictures__images{
     display: flex;
@@ -156,26 +156,6 @@ body{
     flex-grow: 1;
     max-width: 682px;
     border: 1px solid red;
-}
-
-
-
-.footer__socials{
-    max-width: 1720px;
-    border: 1px solid red;
-    margin-top: 55px;
-}
-.footer__socials__info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 105px;
-    flex-grow: 1;
-    align-items: center;
-    text-transform: uppercase;
-    color: #111010;
-    font-size: 10px;
-    margin-top: 12px;
 }
 .footer__timetable{
     display: flex;
@@ -190,69 +170,22 @@ body{
     font-size: 48px;
     color: #000000;
 } 
-.subscription__text{
-  
-}
-.header__price{
-    
-}
-.header__price__menu__text{
-    
-    
-
-}
-.main__images__burger{
-   
-}
-.main__images__point{
-   
-} 
-.header__price__subscription__text{
-    
-}
-.header_price__phone__number{
-    
-}
 .header_price__phone__number a{
     text-decoration: none;
     color: #000000;
 }
-
-table{
-    width: 560px;
-    height: 420px;
-    background-color: white;
-}
-
-td{
-    border: 4px solid  #fbf5f4;
-    text-align: center;
-    font-size: 18px;
-}
-.main__table{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-
 .main__subscription__button{
     position: relative;
     background-color: #f78e6a;
     color: #ffffff;
     width: 300px;
     height: 60px;
-    
     text-align: center;
-    
     border-radius: 29px;
 }
-
 .main__subscription__button div{
     margin-top: 20px;
 }
-
-
 .main__subscription__button__check{
     position: absolute;
     top: 0;
@@ -266,48 +199,53 @@ td{
     font-size: 30px;
     color: #f9807d;
 }
-.header__reviews{
-    max-width: 1720px;
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
-    border: 1px solid red;
-}
-.header__reviews__content{
-   max-width: 1720px;
-   border: 1px solid red;
-}
-.header__reviews__content__description{
-    max-width: 500px;
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-between;
-}
-.header__reviews__menu__text{
-    
-}
-.main__image__picture__burger{
-    
-}
-.main__image__picture__point{
-    
-} 
-.header__reviews__text__inner{
-    
-}
-.header__reviews__phone__number{
-    
-}
 .header__reviews__phone__number a{
     text-decoration: none;
     color: #000000;
 }
-.menu__list{
-    list-style: none;
-    
+.main__reviews__content{
+    max-width: 830px;
+    border: 1px solid red;
 }
-.menu__list li{
-    
+.header__reviews{
+    max-width: 1720px;
+    display: flex;
+     flex-direction: row; 
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 115px;
+    border: 1px solid red;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.client{
+    display: flex;
+    flex-direction: row;
+}
+.title{
+    font-size: 30px;
+    margin-top: -100px;
+    margin-left: 220px;    
+}
+.age{
+    font-size: 18px;
+    margin-left: -130px;
+    margin-top: -20px;
+    white-space: nowrap;
+}
+.menu__list{
+    list-style: none; 
+    margin-top: 145px;
+    margin-left: 60px;
+}
+.main__text{
+    font-size: 18px;
+    margin-top: 59px;
+}
+.main__reviews__text{
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 55px;
 }
 .menu__list a {
    text-decoration: none;
@@ -321,39 +259,23 @@ td{
     content: "Client - ";
     color: #f89376;
 }
-
 li{
     margin-bottom: 10px;
 }
-.main__picture__lotos{
-    
-}
-.main__picture__lotos__img{
-    
-}
-.main__picture__img__photo{
-    
-}
-.title{
-    
-}
-.age{
-    
-}
-.main__text{
-    
-}
-
 .main__try__button{
+    position: relative;
     background-color: #f78e6a;
     color: #ffffff;
-    width: 180px;
-    height: 40px;
-    padding-left: 80px;
-    padding-top: 23px;
-    border-radius: 29px;  
+    text-align: center;
+    width: 275px;
+    height: 60px;
+    border-radius: 29px;
 }
-
+.main__try__button__plus{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .main__pager__current__seven{
     font-size: 72px;
     color: #f9807d;
@@ -361,17 +283,6 @@ li{
 .main__pager__total__number__nine{
     font-size: 30px;
     color: #f9807d;
-}
-.footer__social__icon{
-    display: flex;
-    flex-direction: row;
-    text-transform: uppercase;
-    color: #111010;
-    font-size: 10px;
-}
-.footer{
-    max-width: 1720px;
-    border: 1px solid red;
 }
 .footer__social__icon{
     display: flex;
@@ -392,7 +303,4 @@ li{
 }
 .footer__submit__text{
    margin-right: 10px; 
-}
-.footer__submit__icon{
-    
 }
