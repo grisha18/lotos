@@ -184,7 +184,7 @@ td{
     border-radius: 29px;
 }
 .main__subscription__button div{
-    margin-top: 20px;
+   margin-top: 20px;
 }
 .main__subscription__button__check{
     position: absolute;
@@ -206,6 +206,8 @@ td{
 .main__reviews__content{
     max-width: 830px;
     border: 1px solid red;
+    display: flex;
+    align-items: center;
 }
 .header__reviews{
     max-width: 1720px;
@@ -220,23 +222,49 @@ td{
 }
 .client{
     display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.main__pager__current__seven, .main__pager__current__nine{
+        background: linear-gradient(to right , #f88971, #fb6c9a);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+}
+.price__table__item{
+    display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+.price__table__item__text{
+    display: flex;
+    flex-direction: column;
+}
+.main__image{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 .title{
-    font-size: 30px;
-    margin-top: -100px;
-    margin-left: 220px;    
+    font-size: 30px;  
 }
 .age{
     font-size: 18px;
-    margin-left: -130px;
-    margin-top: -20px;
     white-space: nowrap;
+}
+.menu{
+    position: relative;
+    width: 790px;
+    height: 710px;
+}
+.main__picture__lotos__img{
+    position: absolute;
+    z-index: -1;
 }
 .menu__list{
     list-style: none; 
     margin-top: 145px;
     margin-left: 60px;
+    z-index: 1;
 }
 .main__text{
     font-size: 18px;
@@ -251,13 +279,18 @@ td{
    text-decoration: none;
    color: #7d7a7a;
 }
-.menu__list a::hover{
+.menu__list a:hover{
     color: #111010;
     transition: 1s;
+}
+.menu__list__item{
+    position: relative;
 }
 .menu__list__item::before{
     content: "Client - ";
     color: #f89376;
+    position: absolute;
+    left: -8%;
 }
 li{
     margin-bottom: 10px;
@@ -270,6 +303,12 @@ li{
     width: 275px;
     height: 60px;
     border-radius: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main__try__button div{
+    padding-left: 20px;
 }
 .main__try__button__plus{
     position: absolute;

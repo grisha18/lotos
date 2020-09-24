@@ -15,3 +15,19 @@ main__subscription__button.addEventListener('click', () => {
         behavior: 'smooth'
     }) 
 })
+
+
+
+window.addEventListener( "resize", ()=>{
+
+
+    console.log("here we are");
+
+    pages.forEach( (page)=>{
+
+        page.style.height = "100vh";
+
+    });
+
+
+})
