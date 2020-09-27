@@ -1,10 +1,67 @@
 body{
     background-color: #fbf5f4;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 .page{
     height: 100vh;
+    
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    
+    overflow: hidden; 
+    
 }
+.text{
+    width: 250px;
+    height: 300px;
+    background: #f78e6a;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+   z-index: 5;
+
+    display: none;
+
+}
+.translucent{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0, 0.5);
+    display: none;
+    z-index: 4;
+}
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.close:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.page:nth-child(2){
+    z-index: -200;  
+}
+.page:nth-child(3){
+    z-index: -300;  
+}
+
 .container{
     max-width: 1720px;
     display: flex;
@@ -258,13 +315,13 @@ td{
 }
 .main__picture__lotos__img{
     position: absolute;
-    z-index: -1;
+    
 }
 .menu__list{
     list-style: none; 
     margin-top: 145px;
     margin-left: 60px;
-    z-index: 1;
+    
 }
 .main__text{
     font-size: 18px;
